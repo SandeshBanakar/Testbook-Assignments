@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>HTML Tables</title>
+    </head>
+
+    <body>
+        
+        <!-- Lets start table from here -->
+        <table border="1">
+            <!-- Caption for the Shopping bill table -->
+            <caption>Shopping bill</caption>
+
+            <!-- Table starts from here -->
+
+            <!-- Colspan for Invoice with 3 columns -->
+            <tr>
+                <th colspan="3">Invoice #1234567</th>
+                <th>18 January 2022</th>
+            </tr>
+
+            <!-- Making Colspan for 2 rows of both Pay to and Customer-->
+            <tr>
+                <td colspan="2">
+                    <!-- Pay to column to make it in one cell -->
+                    <b>Pay to:</b><br>
+                    Acme Billing Co.<br>
+                    123 Main St.<br>
+                    Cityville, NA 12345
+                </td>
+
+                
+                <td colspan="2">
+                    <!-- Customer column to make it in one cell -->
+                    <b>Customer:</b><br>
+                    John Smith<br>
+                    321 Willow Way<br>
+                    Southeast Northwestshire, MA 54321
+                </td>
+            </tr>
+
+            <!-- Lower table part -->
+            <tr>
+                <th>Name/Description</th>
+                <th>Qty.</th>
+                <th>@</th>
+                <th>Cost</th>
+            </tr>
+
+            <!-- Data in first row under last part of table -->
+            <tr>
+                <td>Paperclips</td>
+                <td>1000</td>
+                <td>0.01</td>
+                <td>10.00</td>
+            </tr>
+
+            <!-- Data in second row under last part of table -->
+            <tr>
+                <td>Staples (box)</td>
+                <td>100</td>
+                <td>1.00</td>
+                <td>100.00</td>
+            </tr>
+
+            <!-- Adding Colspan for Subtotal and adding data under cost column -->
+            <tr>
+                <th colspan="3">Subtotal</th>
+                <td>110.00</td>
+            </tr>
+
+            <!-- Adding Colspan for tax and adding data under @ and cost -->
+            <tr>
+                <th colspan="2">Tax</th>
+                <td>8%</td>
+                <td>8.80</td>
+            </tr>
+
+            <!-- Adding Colspan for grand total and adding data under Cost column-->
+            <tr>
+                <th colspan="3">Grand Total</th>
+                <td>Rs. 118.80</td>
+            </tr>
+
+        </table>
+        
+
+
+    
