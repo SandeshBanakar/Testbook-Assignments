@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- This is web page title -->
+    <title>HTML Forms</title>
+
+    <!-- Making input of text area with other font -->
+    <style>
+        textarea{font-family: 'Franklin Gothic', Arial, serif;}
+    </style>
+</head>
+
+<body>
+    <!-- Adding name section label for entry -->
+    <label for="username">Name</label><br>
+
+    <!-- Adding input type for the Name section -->
+    <input type="text" name="username" required placeholder="Enter Your Name"><br><br>
+
+    <!-- To get email info of the user -->
+    <label for="email_id">Email</label><br>
+
+    <!-- Adding input type for the email section -->
+    <input type="email" name="email_id" required placeholder="test@gmail.com"><br><br>
+
+    <!-- Entering roll section -->
+    <label for="roll_no">Roll No</label><br>
+
+    <!-- Adding input type for roll_no -->
+    <input type="number" name="roll_no" required placeholder="roll" min="1" max="50"><br><br>
+
+    <!-- Rate courses text before dropdown list -->
+    <label for="drop-down">How would you rate our courses?</label><br>
+
+    <!-- Drowpdown list of 5 grading options -->
+    <select name="drop-down">
+        <option value="Excellent">Excellent</option>
+        <option value="Good">Good</option>
+        <option value="Not Bad">Not Bad</option>
+        <option value="Bad">Bad</option>
+        <option value="Worst">Worst</option>
+    </select>
+
+    <br><br>
+
+    <!-- Favorite topics label for checkbox -->
+    <label>Your Favorite Topic in HTML</label><br>
+
+    <!-- Checkboxes to select from any option -->
+    <input type="checkbox" name="topic1"> Structural Elements <br>
+    <input type="checkbox" name="topic2"> Links and Lists <br>
+    <input type="checkbox" name="topic3"> HTML Media <br>
+    <input type="checkbox" name="topic4"> HTML Table <br>
+    <input type="checkbox" name="topic5"> Grouping Elements <br>
+    <input type="checkbox" name="topic6"> Forms <br>
+
+    <br>
+
+    <!-- Label for radio buttons -->
+    <label for="yes-no">Do you like the HTML course?</label><br>
+
+    <!-- Radio buttons for yes and no -->
+    <input type="radio" name="course-yes"> Yes <br>
+    <input type="radio" name="course-no"> No <br><br>
+
+    <!-- Course personal description -->
+    <label for="description">Few words about the course</label><br>
+    
+    <!-- Adding description box -->
+    <textarea rows="5" cols="50" name="description"></textarea>
+
+    <br><br>
+
+    <!-- Generating submit button with validation -->
+    <button onclick="alert('Your form has been submitted successfully!')">Submit</button>
+</body>
+</html>
